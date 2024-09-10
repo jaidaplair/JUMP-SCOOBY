@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0f7ca7;
+    overflow: hidden;
+}
+
+#scooby {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-image: url('scooby.png'); /* Make sure the path to scooby.png is correct */
+    background-size: cover;
+    background-position: center;
+}
+
+#obstacle {
+    position: absolute;
+    right: -60px; /* Position off-screen initially */
+    bottom: 10px; /* Adjust based on your needs */
+    width: 50px; /* Width of the obstacle */
+    height: 50px; /* Height of the obstacle */
+    background-image: url('villan.png'); /* your image */
+    background-size: cover; /* Scale the image to cover the element */
+    background-position: center; /* Center the image */
+}
+
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
